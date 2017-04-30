@@ -9,6 +9,7 @@ func zero(z *int) {
 
 func main() {
 	x := 5
+	fmt.Println(x) // x is 5
 	fmt.Println(&x)
 	zero(&x)
 	fmt.Println(x) // x is 0
