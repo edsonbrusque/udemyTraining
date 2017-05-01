@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/edsonbrusque/udemyTraining/02_package/stringutil"
 	"github.com/edsonbrusque/udemyTraining/02_package/icomefromalaska"
+	"github.com/edsonbrusque/udemyTraining/02_package/stringutil"
 )
 
 func main() {

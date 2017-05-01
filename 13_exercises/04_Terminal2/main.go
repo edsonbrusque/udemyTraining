@@ -11,5 +11,5 @@ func main() {
 	var big int
 	fmt.Scan(&big)
 
-	fmt.Println(big, " % ", small, " = ", big % small)
+	fmt.Println(big, " / ", small, " = ", big / small)
 }

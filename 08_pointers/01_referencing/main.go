@@ -11,11 +11,10 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(&a)
 
-	var b *int  = &a
+	var b *int = &a
 
 	fmt.Println(b)
 	fmt.Printf("%v %T \n", b, b)
-
 
 	// the above code makes b a pointer to the memory address where an int is stored
 	// b is of type "int pointer"
