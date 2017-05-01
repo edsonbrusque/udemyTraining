@@ -3,12 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	for i := 0; i <= 340; i++ {
-		fmt.Println(i, " - ", string(i), " - ", []byte(string(i)))
+	for i := 5000; i <= 5100; i++ {
+		fmt.Println(i, " - ", string(i), " - ", []int32(string(i)))
 	}
-	foo := `a`
+	foo := 'a'
 	fmt.Println(foo)
 	fmt.Printf("%T \n", foo)
+	fmt.Printf("%T \n", rune(foo))
 }
 
 /*
