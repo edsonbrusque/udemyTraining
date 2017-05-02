@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	n := average(43, 56, 87, 12, 45, 57)
+	n := average(56, 43, 87, 12, 45, 57)
 	fmt.Println(n)
 }
+
 
 func average(sf ...float64) float64 {
 	fmt.Println(sf)

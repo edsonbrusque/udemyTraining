@@ -9,6 +9,8 @@ func main() {
 }
 
 func average(sf []float64) float64 {
+	fmt.Println(sf)
+	fmt.Printf("%T \n", sf)
 	total := 0.0
 	for _, v := range sf {
 		total += v
