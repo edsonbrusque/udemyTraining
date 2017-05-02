@@ -12,9 +12,11 @@ func filter(numbers []int, callback func(int) bool) []int {
 	return xs
 }
 
+func test(n int) bool {
+	return n > 2
+}
+
 func main() {
-	xs := filter([]int{1, 2, 3, 4}, func(n int) bool {
-		return n > 1
-	})
+	xs := filter([]int{1, 2, 3, 4}, test)
 	fmt.Println(xs) // [2 3 4]
 }

@@ -9,4 +9,5 @@ func main() {
 	}
 
 	greeting()
+	fmt.Printf("%T\n", greeting)
 }
