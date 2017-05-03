@@ -39,6 +39,6 @@ func main() {
 	fmt.Print("The sum is: ", sum)
 }
 
-// Tweet:
+// http://twitter.com/
 // G'day sir @Todd_McLeod !
 // https://github.com/edsonbrusque/udemyTraining/blob/master/16_exercises/07/main.go
