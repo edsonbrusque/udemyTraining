@@ -9,12 +9,18 @@ type customer struct {
 
 func main() {
 	c1 := customer{"Todd", 44}
+
+	fmt.Println(c1)       // {Rocky 44}
+	fmt.Println(&c1) // 0x8201e4120
 	fmt.Println(&c1.name) // 0x8201e4120
+	fmt.Println(&c1.age) // 0x8201e4120
 
 	changeMe(&c1)
 
 	fmt.Println(c1)       // {Rocky 44}
+	fmt.Println(&c1) // 0x8201e4120
 	fmt.Println(&c1.name) // 0x8201e4120
+	fmt.Println(&c1.age) // 0x8201e4120
 }
 
 func changeMe(z *customer) {
