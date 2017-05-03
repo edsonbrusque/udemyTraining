@@ -14,6 +14,10 @@ func half(n int) (int, bool) {
 func main() {
 	var n int
 	var b bool
+
+	n, b = half(1)
+	fmt.Println(n, b)
+
 	n, b = half(2)
 	fmt.Println(n, b)
 }
