@@ -7,11 +7,11 @@ package main
 import "fmt"
 
 func foo(i ...int) {
-	fmt.Print("[")
-	for _, j := range i{
-		fmt.Print(j, " ")
+	fmt.Printf("%T [", i)
+	for _, j := range i {
+		fmt.Printf(" %v ", j)
 	}
-	fmt.Println("]")
+	fmt.Printf("]\n")
 }
 
 func main() {

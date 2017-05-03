@@ -3,7 +3,7 @@ package main
 
 import "fmt"
 
-func theBigger(n... int) int {
+func theBigger(n ...int) int {
 	var bigger int
 
 	for _, a := range n {
