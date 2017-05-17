@@ -5,57 +5,57 @@ import (
 	"math"
 )
 
-type Square struct {
+type square struct {
 	side float64
 }
 
-func (z Square) area() float64 {
+func (z square) area() float64 {
 	return z.side * z.side
 }
 
-func (z Square) perimeter() float64 {
+func (z square) perimeter() float64 {
 	return 4 * z.side
 }
 
-type Circle struct {
+type circle struct {
 	radius float64
 }
 
-func (c Circle) area() float64 {
+func (c circle) area() float64 {
 	return math.Pi * c.radius * c.radius
 }
 
-func (c Circle) perimeter() float64 {
+func (c circle) perimeter() float64 {
 	return 2 * math.Pi * c.radius
 }
 
-type Triangle struct {
+type triangle struct {
 	side float64
 }
 
-func (t Triangle) area() float64 {
+func (t triangle) area() float64 {
 	return t.side * t.side * math.Sqrt(3) / 4
 }
 
-func (z Triangle) perimeter() float64 {
-	return 3 * z.side
+func (t triangle) perimeter() float64 {
+	return 3 * t.side
 }
 
-type Shape interface {
+type shape interface {
 	area() float64
 	perimeter() float64
 }
 
-func info(z Shape) {
+func info(z shape) {
 	fmt.Println(z)
 	fmt.Println(z.area())
 	fmt.Println(z.perimeter())
 }
 
 func main() {
-	s := Square{10}
-	c := Circle{5}
-	t := Triangle{20}
+	s := square{10}
+	c := circle{5}
+	t := triangle{20}
 	info(s)
 	info(c)
 	info(t)

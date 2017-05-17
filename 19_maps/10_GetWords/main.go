@@ -10,7 +10,7 @@ import (
 
 func main() {
 	fmt.Println("Getting file...")
-	res, err := http.Get("http://www-01.sil.org/linguistics/wordlists/english/wordlist/WordsEn.txt")
+	res, err := http.Get("http://www-01_value.sil.org/linguistics/wordlists/english/wordlist/WordsEn.txt")
 	if err != nil {
 		log.Fatalln(err)
 	}
