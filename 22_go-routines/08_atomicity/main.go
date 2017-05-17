@@ -5,7 +5,6 @@ import (
 	"math/rand"
 	"sync"
 	"time"
-	//"sync/atomic"
 	"sync/atomic"
 )
 
@@ -23,9 +22,6 @@ func main() {
 func incrementor(s string) {
 	for i := 0; i < 20; i++ {
 		time.Sleep(time.Duration(rand.Intn(3)) * time.Millisecond)
-		// race:
-		//counter++
-		// no race:
 		atomic.AddInt64(&counter, 1)
 		fmt.Println(s, i, "Counter:", counter)
 	}
