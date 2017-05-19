@@ -7,7 +7,6 @@ func main() {
 	fmt.Println(n)
 }
 
-
 func average(sf ...float64) float64 {
 	fmt.Println(sf)
 	fmt.Printf("%T \n", sf)

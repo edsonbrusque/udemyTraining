@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	myGreeting := map[string]string{
-		"Tim":   "Good morning!",
-		"Jenny": "Bonjour!",
+		"Tim":     "Good morning!",
+		"Jenny":   "Bonjour!",
 		"Harleen": "Howdy!",
 	}
 

@@ -6,7 +6,6 @@ package main
 
 import "fmt"
 
-
 func main() {
 	sum := 0
 	for n := 1; n < 1000; n++ {

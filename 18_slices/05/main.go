@@ -18,7 +18,7 @@ func main() {
 		fmt.Println(i, currentEntry)
 	}
 
-	for j := 0; j < len(greeting); j++{
+	for j := 0; j < len(greeting); j++ {
 		fmt.Println(greeting[j])
 	}
 

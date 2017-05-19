@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-	"log"
 	"bufio"
+	"fmt"
+	"log"
+	"net/http"
 	"os"
 )
 
@@ -31,7 +31,7 @@ func main() {
 	}
 
 	fmt.Println("Printing...")
-	i := 0;
+	i := 0
 	for k, _ := range words {
 		fmt.Println(k)
 		if i == 200 {

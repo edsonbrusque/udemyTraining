@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
-	"strings"
+	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 	for scanner.Scan() {
 		fmt.Println(scanner.Text())
 	}
-	if err:= scanner.Err(); err != nil {
+	if err := scanner.Err(); err != nil {
 		fmt.Println(os.Stderr, "reading input:", err)
 	}
 }
