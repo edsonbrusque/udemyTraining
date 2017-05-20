@@ -13,7 +13,7 @@ func main() {
 func incrementor(s string) chan int {
 	out := make(chan int)
 	go func() {
-		for i := 0; i < 10; i++ {
+		for i := 0; i < 20; i++ {
 			out <- 1
 			fmt.Println(s, i)
 		}
