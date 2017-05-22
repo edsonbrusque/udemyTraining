@@ -1,20 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	c := chan int
-	
-	f := factorial(4)
-	fmt.Println("Total:", f)
-}
+	in := make(chan int)
+	out := make(chan int)
 
-func factorial(n int) int {
-	total := 1
-	for i := n; i > 0; i-- {
-		total *= i
-	}
-	return total
+	go func() {
+		total := 1
+		for i := <-in; i > 0; i-- {
+			total *= i
+		}
+		out <- total
+	}()
+
+	in <- 4
+	fmt.Println("Factorial:", <-out)
 }
 
 /*
@@ -26,4 +29,3 @@ CHALLENGE #2
 ---- Formulate your answer, then post that answer to this discussion here: https://goo.gl/flGsyX
 ---- Read a few of the other answers at the discussion area to see the reasons of others
 */
-
